@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import React from "react"; 
 import './App.css';
 
+// import LoginForm from './LoginForm';
+// import SignupForm from './SignupForm';
+import { useEffect, useState } from 'react';
+import LoginSigupPage from "./LoginSigupPage"
+import SideNav from './SideNav';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [currentUser, setCurrentUser] = useState(null);
+
+  useEffect(() => {
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => {
+          setCurrentUser(user);
+          
+        });
+      }
+      else {
+        setCurrentUser(null)
+      }
+    });
+  }, []);
+
+  if(!currentUser) return <LoginSigupPage setCurrentUser={setCurrentUser}/>
+
+return (
+  <div className="main">
+    <SideNav setCurrentUser={setCurrentUser} currentUser={currentUser}/>
+  </div>
+)
 }
 
 export default App;

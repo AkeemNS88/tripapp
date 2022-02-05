@@ -1,38 +1,423 @@
-.App {
+
+
+
+
+body {
+  
+  
+  background: url("https://scontent.fatl1-2.fna.fbcdn.net/v/t39.30808-6/273168737_10160000625455663_6648608865307435874_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=WF2BapB7lE8AX-IzyOh&_nc_oc=AQmxxtt4nPhof0JtrZZ2cQ1NkL-cXCCuacpu2la4JrfFYUux_QYvMqJM4lrrUnd_4Bk&_nc_ht=scontent.fatl1-2.fna&oh=00_AT9-Uok-9fM-0KeE-dleyChIrayfZSO7IfqmuJWm-dxbFA&oe=62010F98");
+  background-repeat: no-repeat;
+  background-size: 1850px 977px;
+  
+ 
+}
+
+/* .popup {
+  width: 20vw;
+  padding: 1rem;
+ 
+} */
+
+.popup img {
+  height: 200px;
   text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+  display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#alert1{
+  color: red;
+  border-color: red;
+  background-color: #ffdadb;
+  margin-top: 10px;
+  padding:7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#alert2{
+  color: red;
+  border-color: red;
+  background-color: #ffdadb;
+  margin-top: 10px;
+  padding:7px;
+}
+
+
+
+
+
+#imgmap{
+  /* margin: 0 ; */
+  /* position: absolute; */
+  /* object-fit: fill; */
+
+  object-fit: cover;
+
+}
+
+
+.form1 label,
+.form1 input,
+.form1 textarea,
+.form1 button {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    display: block;
+    width: 100%; 
+}
+
+#sidebar {
+    background-image: url("https://scontent.fatl1-1.fna.fbcdn.net/v/t39.30808-6/273321697_10160000328995663_3571344609457384565_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=27A2hpLKeVkAX86ZC5b&_nc_ht=scontent.fatl1-1.fna&oh=00_AT_9pzXKE4XCW5HZ9RyKw4VLdctK4tgbB8JESkkhsOpHyA&oe=6200A147");
+    background-repeat: repeat;
+    background-size:auto;
+    
+
+
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  #sidebar .ant-layout-sider-children {
+    padding-top: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  #sidebar .ant-menu {
+    background: transparent !important;
+    color: rgb(120, 9, 134);
+    border-right: none !important;
+    text-align: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+  
   }
-}
+
+  #sidebar .ant-menu a{
+    text-decoration: none;
+  }
+  
+  #sidebar .ant-menu-item {
+    margin-top: 2rem;
+  }
+
+ 
+
+  /* .ant-modal-header {
+    
+    background-image: url("https://scontent.fatl1-1.fna.fbcdn.net/v/t39.30808-6/273165559_10160000469065663_3270972112730555502_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=SxZegf-STMIAX_iB4FV&_nc_ht=scontent.fatl1-1.fna&oh=00_AT-YT7UIm-wg5SeA4Avj_Pw0x5O4NCMIMJcXouZb-0bNIg&oe=62005987");
+    background-size: 1076px 70px;
+    
+  } */
+
+  .ant-layout-header {
+    background-color: #503624 !important;
+    /* background-image: url("https://scontent.fatl1-1.fna.fbcdn.net/v/t39.30808-6/273165559_10160000469065663_3270972112730555502_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=SxZegf-STMIAX_iB4FV&_nc_ht=scontent.fatl1-1.fna&oh=00_AT-YT7UIm-wg5SeA4Avj_Pw0x5O4NCMIMJcXouZb-0bNIg&oe=62005987"); */
+    
+  }
+  
+  .ant-layout-header h1{
+    width: 100%;
+    height: 64px;
+    
+    padding:  0px 50px;
+    background-image: url("https://scontent.fatl1-2.fna.fbcdn.net/v/t39.30808-6/273010798_10160003510440663_1859383860763744255_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=Vz9d2ifSXcAAX_bJza0&_nc_ht=scontent.fatl1-2.fna&oh=00_AT_ndJD07f1mYGB431iC5M92MON7EGusuOl5ZuaqOf8mSw&oe=6203415D");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+
+    
+  } 
+  
+
+  #login-cont{
+    margin-top: 100px;
+  }
+
+  #title{
+    text-align: center;
+    padding: 50px;
+    
+  }
+
+  #login{
+    background-color: #c8b3e6;
+    border: 2px solid #85715e;
+    border-radius: .5em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 1em;
+    text-align: left;
+    width: 600px;
+    box-shadow:  -0.2em 1px #dddddd, -0.5em 0 .5em #dddddd;
+  }
+
+  #signin{
+    background-color: #c8b3e6;
+    border: 2px solid #85715e;
+    border-radius: .5em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 1em;
+    text-align: left;
+    width: 600px;
+    box-shadow:  -0.2em 1px #dddddd, -0.5em 0 .5em #dddddd;
+  }
+
+  #metriptitle{
+    padding-top: 0px;
+    color:#eae6ca;
+    font-weight: bold;
+  
+  }
+
+  .oldtripview{
+    padding: 5px;
+   
+  }
+
+  .oldtripview label{
+    font-weight: bold;
+    font-size: small;
+   
+  }
+
+ 
+
+  .oldtripview h3{
+    text-align: center;
+    background-color: #caf0f8;
+    /* margin: 0; */
+    width: 100%;
+  }
+
+  #bustbutton{
+    color: #d40bca;
+    border-color: #0096c7;
+    margin-top: 10px;
+    font-size: 1rem;
+    /* margin: 0.5rem 0; */
+    display: block;
+    width: 100%;
+  }
+
+  #submitbutton{
+    color: #0096c7;
+    border-color: #0096c7;
+    margin-top: 10px;
+    font-size: 1rem;
+    /* margin: 0.5rem 0; */
+    display: block;
+    width: 100%;
+  }
+
+  #buttonsubmit1{
+    border: 1px solid #0096c7;
+    padding: 6px;
+    border-radius: 0.1cm;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #0096c7;
+    /* margin: 0.5rem 0; */
+    display: block;
+    width: 100%;
+  }
+
+
+  .showpoi label{
+    font-weight: bold;
+    font-size: small;
+  }
+
+  .showhotel label{
+    font-weight: bold;
+    font-size: small; 
+  }
+
+  #planNewTrip{
+    margin-bottom: 150px;
+    padding: 15px;
+    background-color: #c8b3e6;
+  }
+/* 
+  #multiselector{
+    position:absolute;
+    top:100%;
+  } */
+
+  #dropdown{
+    width: 250px;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow: hidden;
+    border: 1px solid #9c9c9c;
+    outline: none;
+    cursor: text;
+    transition: border-radius .2s;
+    border-radius: 8px;
+    background-color: rgb(246, 246, 246);
+    padding: 8px;
+  }
+/* 
+  #option{
+    width: 250px;
+  } */
+/* 
+  #table{
+    width: 100%;
+    border-collapse:collapse;
+  } */
+
+  #table{
+
+    /* margin: auto; */
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70% !important; 
+  }
+
+  table tr td {
+    padding:0;  
+  }
+  table tr td:nth-child(1) {
+    width:0.5px;
+  } 
+  table tr td:nth-child(2) {
+    width:5px;
+  }
+  table tr td:nth-child(3) {
+    width:10px;
+  }
+  table tr td:nth-child(4) {
+    width:10px;
+  }
+  table tr td:nth-child(5) {
+    width:40px;
+  }
+  table tr td:nth-child(6) {
+    width:3px;
+  }
+
+  
+
+  #planNewTrip{
+    text-align: center;
+    margin: 15px;
+  }
+
+  #city{
+    overflow: hidden;
+    border: 1px solid #9c9c9c;
+    outline: none;
+    cursor: text;
+    transition: border-radius .2s;
+    border-radius: 8px;
+    background-color: rgb(246, 246, 246);
+    padding: 8px;
+    
+  }
+
+  #date{
+    overflow: hidden;
+    border: 1px solid #9c9c9c;
+    outline: none;
+    cursor: text;
+    transition: border-radius .2s;
+    border-radius: 8px;
+    background-color: rgb(246, 246, 246);
+    padding: 8px;
+  }
+
+
+  option {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 2px solid #394a6d;
+    border-top: 0;
+    background: #fff;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  #button3{
+    margin-top: 10px;
+    font-size: 1rem;
+    /* margin: 0.5rem 0; */
+    display: block;
+    width: 100%;
+    border-radius: 5cm;
+    margin-top: 30px;
+    padding: 8px;
+
+    border: 1px solid #9c9c9c;
+    outline: none;
+    cursor: text;
+  
+    background-color: rgb(246, 246, 246);
+  }
+
+  #tagglebutton{
+    margin-left: 45%;
+    margin-bottom: 15px;
+  }
+
+  #button5{
+    margin-left: 40%;
+    margin-bottom: 15px;
+  }
+
+  #hotelmap{
+   margin-bottom: -4px;
+   font-weight: bolder;
+  }
+
+  #attpointmap{
+    margin-bottom: -4px;
+    font-weight: bolder;
+  }
+
+  #button7{
+    margin-top:20%;
+    margin-left:25%;
+    display:block;
+  }
+
+  #buttontotal{
+    margin-left: 40%;
+    margin-top: 40px;
+  }
+
+  #graphs{
+    margin-top: 20;
+  }
+
+  #loginbutton{
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 7px;
+    border-radius: 0.1cm;
+  }
+
+ #sigupbutton{
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 0.1cm;
+  background-color: rgb(246, 246, 246);
+ }
+
+ #button1{
+  background-color: rgb(246, 246, 246);
+
+ }
+
+ 
