@@ -64,7 +64,7 @@ Rails.application.configure do
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 
-   REACT_APP_MAPBOX_KEY = "pk.eyJ1IjoiZGpoeXBlNDEiLCJhIjoiY2t6NHJzcHI4MGpsYzJvcGgwdmlmeWp2OCJ9.I3H41cBWm2dSoHrg6tQf1w"
+   REACT_APP_MAPBOX_KEY = "pk.eyJ1IjoiZGpoeXBlNDEiLCJhIjoiY2t6NHJ2bDBtMGpmcDJ3bXowdjRpbzR4ZCJ9.hlxJkkbKmVElKFTCmHXULg"
 
 
 
@@ -76,7 +76,7 @@ Rails.application.configure do
     port:                 587,
     domain:               'gmail.com',
     user_name:            ENV['hype.r.retro@gmail.com'],
-    password:             ENV['Blue0809!,'],
+    password:             ENV['One234567!,'],
     authentication:       'plain',
     enable_starttls_auto: true  }
 
