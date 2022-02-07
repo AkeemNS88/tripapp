@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import PlanNewTrip from "./PlanNewTrip"
 
 
 function LandmarkMap({ hotels, takePoi }) {
@@ -98,7 +99,7 @@ function LandmarkMap({ hotels, takePoi }) {
                     classviewbox="0 0 24 24"
                     width="56"
                     height="56"
-                    stroke="#5482A5"
+                    stroke="#ff00a2"
                     stroke-width="2"
                     fill="none"
                     stroke-linecap="round"
@@ -135,7 +136,7 @@ function LandmarkMap({ hotels, takePoi }) {
           );
         })}
       </ReactMapGL>
-      {/* <PlanNewTrip hotels={hotels} pointsInteres={pointsInteres} /> */}
+      <PlanNewTrip hotels={hotels} pointsInteres={pointsInteres} />
 
       {/* <ShowPlanedTrips/> */}
     </>

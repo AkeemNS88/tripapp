@@ -19,7 +19,7 @@ function TableFutureTrip(){
 
      
     const handleDelete =(val) =>{
-        console.log("cfare do fshihet",val)
+        console.log("will be deleted",val)
         fetch(`/newtrips/${val.id}`,{
             method:'DELETE'
         })

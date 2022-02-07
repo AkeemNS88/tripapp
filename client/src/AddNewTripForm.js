@@ -18,7 +18,7 @@ function AddNewTripForm({ location, onClose }) {
     visitDate: "",
   });
   console.log("this goes to db",formData)
-  const[ration,setRating]=useState("")
+  const[ration, setRating]=useState("")
    
   const [error, setErros] = useState([]);
 

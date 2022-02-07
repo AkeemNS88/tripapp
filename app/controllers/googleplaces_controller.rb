@@ -3,9 +3,8 @@ class GoogleplacesController < ApplicationController
    
     def index
    
-    target="https://maps.googleapis.com/maps/api/place/textsearch/json?query=attraction&location=#{params[:lat]},#{params[:long]}&radius=8000&language=en&key=#{ENV["API_KEY"]}"
-    # target="https://maps.googleapis.com/maps/api/place/textsearch/json?query=attraction&location=41.902782,12.496365&radius=2000&language=en&key=AIzaSyD_noLsHZQbJc7tAFC-u031AbdX4c3vGcs"
-    render json:{
+     target="https://maps.googleapis.com/maps/api/place/textsearch/json?query=attraction&location=#{params[:lat]},#{params[:long]}&radius=8000&language=en&key=AIzaSyCcVOkgVrDp21og29vYjbnkFk8Eh2Gu2eA"
+     render json:{
         # msg: {info: "plasess to visit"},
         data: JSON.parse(RestClient.get(target))
     }

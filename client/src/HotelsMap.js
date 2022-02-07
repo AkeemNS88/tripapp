@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import PlanNewTrip from "./PlanNewTrip";
 import LandmarkMap from "./LandmarkMap";
@@ -19,6 +19,9 @@ function HotelsMap() {
   });
 
   const [hotels, setHotels] = useState([]);
+  // const takeHotels = (newHotels) => {
+  //   setHotels(newHotels);
+  // };
 
   const [showPopup, setshowPopup] = React.useState({});
 
@@ -32,7 +35,7 @@ function HotelsMap() {
       `/hotels?lat=${addEntryLocation.latitude}&long=${addEntryLocation.longitude}`
     )
       .then((response) => response.json())
-      .then((data) => setHotels(data.data.results));
+      .then((hotels) => setHotels(hotels.data.results));
   };
 
   const [pointsInteres, setPointsInters] = useState([]);
@@ -49,9 +52,9 @@ function HotelsMap() {
         <>
           <Button variant="outline-dark" id="tagglebutton" onClick={() => setShowMap(false)}>
             {" "}
-            Show Attraction Points{" "}
+            Points of interest{" "}
           </Button>
-          <p id="hotelmap">{" "}Hotel Map {" "}</p>
+          <p id="hotelmap">{" "} Hotels {" "}</p>
           <ReactMapGL
             {...viewport}
             mapStyle="mapbox://styles/djhype41/ckz7614kq002414th1qdefdgp"
@@ -59,19 +62,19 @@ function HotelsMap() {
             onViewportChange={setViewport}
             onDblClick={takeCordinate}
           >
-            {hotels.map((poi) => {
+            {hotels.map((hotel) => {
               return (
-                <React.Fragment key={poi.id}>
+                <React.Fragment key={hotel.id}>
                   <Marker
-                    latitude={poi.geometry.location.lat}
-                    longitude={poi.geometry.location.lng}
+                    latitude={hotel.geometry.location.lat}
+                    longitude={hotel.geometry.location.lng}
                     offsetLeft={-20}
                     offsetTop={-10}
                   >
                     <div
                       onClick={() =>
                         setshowPopup({
-                          [poi.place_id]: true,
+                          [hotel.place_id]: true,
                         })
                       }
                     >
@@ -79,10 +82,10 @@ function HotelsMap() {
                         className="marker"
                         classviewbox="0 0 24 24"
                         width="56p"
-                        height="56"
-                        stroke=" #5482A5 "
+                        height="56p"
+                        stroke=" #8100eb "
                         stroke-width="2"
-                        fill="none"
+                        fill="#8100eb"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                       >
@@ -91,22 +94,20 @@ function HotelsMap() {
                       </svg>
                     </div>
                   </Marker>
-                  {showPopup[poi.place_id] ? (
+                  {showPopup[hotel.place_id] ? (
                     <Popup
-                      latitude={poi.geometry.location.lat}
-                      longitude={poi.geometry.location.lng}
+                      latitude={hotel.geometry.location.lat}
+                      longitude={hotel.geometry.location.lng}
                       closeButton={true}
                       closeOnClick={false}
                       onClose={() => setshowPopup({})}
                       anchor="top"
                     >
                       <div className="showhotel">
-                        <h5>{poi.name}</h5>
+                        <h5>{hotel.name}</h5>
                         <label>Address:</label>
-                        <p>{poi.formatted_address}</p>
-                        <p>{poi.rating} ⭐</p>
-                        {/* (poi.photos)&&poi.photos.forEach((i)=>console.log(i.photo_reference))} */}
-                        {/* {poi.photos && poi.photos.map((i)=><img src={i.photo_reference} alt={poi.name} />)} */}
+                        <p>{hotel.formatted_address}</p>
+                        <p>{hotel.rating} ⭐</p>
                       </div>
                     </Popup>
                   ) : null}

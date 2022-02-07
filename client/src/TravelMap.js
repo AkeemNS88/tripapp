@@ -62,7 +62,7 @@ function TravelMap({ currentUser }) {
     setRating(newRating);
   };
 
-  console.log("do te postohet ne db si update", formData);
+  console.log("will update db", formData);
   const handleSubmitUpdate = (e) => {
     console.log(" submit  update");
     e.preventDefault();
@@ -99,7 +99,7 @@ function TravelMap({ currentUser }) {
     fetch("/mytrips")
       .then((res) => res.json())
       .then((trips) => {
-          console.log("trips from db",trips)
+          console.log("trips - db",trips)
         if(trips=== null){
           setPoints([{
             latitude: 0,
@@ -195,7 +195,7 @@ console.log(points)
                         </Form.Group>
 
                         <Form.Group className="mb-3">
-                          <Form.Label> Commentes</Form.Label>
+                          <Form.Label> Comments</Form.Label>
                           <Form.Control
                             type="text"
                             name="comments"
@@ -207,8 +207,8 @@ console.log(points)
                           <ReactStars
                             count={5}
                             onChange={ratingChanged}
-                            size={24}
-                            activeColor="#ffd700"
+                            size={32}
+                            activeColor="#ff00d9"
                           />
                         </Form.Group>
                         <Form.Group className="mb-3">
@@ -258,7 +258,7 @@ console.log(points)
                     latitude={point.latitude}
                     longitude={point.longitude}
                     closeButton={true}
-                    closeOnClick={true}
+                    closeOnClick={false}
                     onClose={() => setShowPopup({})}
                     anchor="top"
                   >
@@ -267,7 +267,8 @@ console.log(points)
                       <label> Comments:</label>
                       <p>{point.comments}</p>
                       <label> Rating:</label>
-                      <p><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>  </p>
+                      <p> { Array(ration).fill().map((_, i) => ( <span>🍌</span> )) }</p>
+                     
                       <label> Description:</label>
                       <p style={{ maxWidth: 150 }}>{point.description}</p>
                       <label> Visited on:</label>

@@ -16,7 +16,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
   const [value, setvalue] = useState("");
   var frontEndAttractions = [];
 
-  const handleOnchange = (value) => {
+  const handleOnchange = value => {
     setvalue(value);
     const arrValu = value.split(",");
     if (arrValu.length !== 0)  {
@@ -25,7 +25,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
         "FrontEndAttractions",
         JSON.stringify(frontEndAttractions[0].split(","))
       );
-     
+     // need fertch for hotels ?? 
       arrValu.map((oneattraction) => {
        if(oneattraction !==" "){
         fetch("/attractions", {
@@ -39,7 +39,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
         }).then((res) => {
           if (res.ok) {
             res.json().then((attractions) => {
-              console.log("attractions posted in db", attractions);
+              console.log("attractions - db", attractions);
             });
           } else {
             res.json().then((error) => {
@@ -53,7 +53,8 @@ function PlanNewTrip({ hotels, pointsInteres }) {
   };
 
   const listhotels = hotels.map((hotels) => {
-    return <option id="option" key={hotels.place_id}>{hotels.name}</option>;
+    
+    return <option id={hotels.place_id} key={hotels.place_id}>{hotels.name}</option>;
   });
 
   const listpoi = pointsInteres.map((poi) => {
@@ -79,7 +80,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
       if (res.ok) {
         res.json().then((newtrip) => {
           handleSubmit2(newtrip.id);
-          alert("New Trip Created")
+          alert("Tripanzee!!!!")
           setFormData({city: "", date:"", hotel:""})
           setvalue(null)
         });
@@ -125,7 +126,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
           for (let j = 0; j < tempAttractions.length; j++) {
             if (data[i].name === tempAttractions[j]) {
               validAttractions.push(data[i].id);
-              console.log("array me valid data", validAttractions);
+              console.log("array of valid data", validAttractions);
             }
           }
         }
@@ -144,30 +145,30 @@ function PlanNewTrip({ hotels, pointsInteres }) {
       <Form id="planNewTrip" onSubmit={handleSubmit}>
       <Row className="align-items-center">
          
-         <Col xs="auto">
+        <Col xs="auto">
         <Form.Group className="mb-3">
         <Form.Label> City</Form.Label>
         <Form.Control id="city" name="city" value={formData.city} onChange={handleChange}  menuPlacement="bottom"/>
         </Form.Group>
-         </Col>
+        </Col>
 
          <Col  xs="auto">
          <Form.Group className="mb-3">
          <Form.Label> Date</Form.Label>
-        <Form.Control
-         id="date"
-          name="date"
-          type="date"
-          value={formData.date}
-          onChange={handleChange}
-        />
+          <Form.Control
+            id="date"
+            name="date"
+            type="date"
+            value={formData.date}
+            onChange={handleChange}
+          />
         </Form.Group>
         </Col>
 
         <Col  xs="auto">
         <Form.Group className="mb-3">
-        <Form.Label> Hotels</Form.Label>
-        <Form.Select id="dropdown" name="hotel" value={formData.hotel} onChange={handleChange} menuPlacement="bottom" >
+        <Form.Label> Hotel</Form.Label>
+        <Form.Select menuPlacement="auto" id="dropdown" name="hotel" value={formData.hotel} onChange={handleChange}>
           {listhotels}
         </Form.Select>
         </Form.Group>
@@ -183,7 +184,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
           // menuPosition='bottom'
           downArrow={true}
           defaultValue="Attraction Point"
-          menuPlacement="bottom"
+          menuplacement="bottom"
         />
         </Form.Group>
         </Col>

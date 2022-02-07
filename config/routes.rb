@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
-  get "/me", to: "users#show"
+  get "/tripanzee", to: "users#show"
   get "/places", to: "googleplaces#index"
   get "/hotels", to: "hotels#index"
 
