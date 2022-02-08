@@ -5,6 +5,10 @@ import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import AddNewTripForm from "./AddNewTripForm";
 import { Button, Form, Label, Control } from "react-bootstrap";
 import ReactStars from "react-rating-stars-component";
+// import Directions from "react-map-gl-directions";
+
+ 
+ const MAPBOX_TOKEN ="pk.eyJ1IjoiZGpoeXBlNDEiLCJhIjoiY2t6NHJzcHI4MGpsYzJvcGgwdmlmeWp2OCJ9.I3H41cBWm2dSoHrg6tQf1w"
 
 function TravelMap({ currentUser }) {
   const [edit, setEdit] = useState({ point: false });
@@ -21,12 +25,14 @@ function TravelMap({ currentUser }) {
 
 
 
+
   const [viewport, setViewport] = useState({
     width: "1720px",
     height: "700px",
     latitude: 37.6,
     longitude: -95.665,
     zoom: 3.5,
+    
   });
 
   const [points, setPoints] = useState([]);
@@ -121,10 +127,13 @@ function TravelMap({ currentUser }) {
       longitude,
     });
   };
+  
+
 console.log(points)
   return (
     <> 
       <ReactMapGL
+        
         {...viewport}
         mapStyle="mapbox://styles/djhype41/ckz7614kq002414th1qdefdgp"
         mapboxApiAccessToken={"pk.eyJ1IjoiZGpoeXBlNDEiLCJhIjoiY2t6NHJzcHI4MGpsYzJvcGgwdmlmeWp2OCJ9.I3H41cBWm2dSoHrg6tQf1w"}
@@ -134,7 +143,9 @@ console.log(points)
         
       >
         
+        
         {
+          
         
         points.map((point) => {
           return (

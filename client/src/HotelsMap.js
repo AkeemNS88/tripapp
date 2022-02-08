@@ -11,6 +11,7 @@ function HotelsMap() {
     latitude: 37.6,
     longitude: -95.665,
     zoom: 3,
+    
   });
 
   const [addEntryLocation, setAddEntryLocation] = useState({

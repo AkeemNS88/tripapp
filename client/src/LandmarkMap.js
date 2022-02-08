@@ -77,6 +77,7 @@ function LandmarkMap({ hotels, takePoi }) {
         mapboxApiAccessToken="pk.eyJ1IjoiZGpoeXBlNDEiLCJhIjoiY2t6NHJzcHI4MGpsYzJvcGgwdmlmeWp2OCJ9.I3H41cBWm2dSoHrg6tQf1w"
         onViewportChange={setViewport}
         onDblClick={takeCordinate}
+        
       >
         {pointsInteres.map((poi) => {
           return (
