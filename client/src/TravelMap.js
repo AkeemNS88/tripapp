@@ -209,6 +209,7 @@ console.log(points)
                             onChange={ratingChanged}
                             size={32}
                             activeColor="#ff00d9"
+                            
                           />
                         </Form.Group>
                         <Form.Group className="mb-3">
@@ -267,7 +268,7 @@ console.log(points)
                       <label> Comments:</label>
                       <p>{point.comments}</p>
                       <label> Rating:</label>
-                      <p> { Array(ration).fill().map((_, i) => ( <span>🍌</span> )) }</p>
+                      <p> { Array(point.rating).fill().map((_, i) => ( <span>🍌</span> )) }</p>
                      
                       <label> Description:</label>
                       <p style={{ maxWidth: 150 }}>{point.description}</p>

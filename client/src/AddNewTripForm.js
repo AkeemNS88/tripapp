@@ -91,6 +91,7 @@ function AddNewTripForm({ location, onClose }) {
         halfIcon={<i className="fa fa-star-half-alt"></i>}
         fullIcon={<i className="fa fa-star"></i>}
         activeColor="#ffd700"
+        char= ""
       />
 
       <Form.Group className="mb-3">
