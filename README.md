@@ -105,8 +105,7 @@ To deploy, commit your code and push the changes to Heroku:
 
 ```sh
 git add .
-git commit -m 'Commit message'
-git push heroku main
+git commit -m 'Commit messag
 ```
 
 > Note: depending on your Git configuration, your default branch might be named

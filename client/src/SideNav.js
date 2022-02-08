@@ -37,13 +37,13 @@ function SideNav({setCurrentUser, currentUser}){
                     </Menu.Item>
                     <Menu.Item key={2}>
                         <Link to="/new">
-                            Plan New Trip
+                            New Trip
                         </Link>
                     </Menu.Item>
 
                     <Menu.Item key={3}>
                         <Link to="/table">
-                            Future Trips
+                            Upcoming Trips
                         </Link>
                     </Menu.Item>
 
