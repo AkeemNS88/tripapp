@@ -1,8 +1,8 @@
 body {
   
-  background: url("/tripan.jpg");
+  background: url("/bg3.gif");
   background-repeat: no-repeat;
-  background-size: 1952px 977px;
+  background-size: 1952px 940px;
   
 }
 
@@ -173,7 +173,7 @@ body {
   }
 
   .mapboxgl-popup-content{
-    background-color: #c8b3e6;
+    background-color: #d1d1d1;
     border: 2px solid #85715e;
     box-shadow:  -0.2em 1px #dddddd, -0.5em 0 .5em #dddddd;
   }
