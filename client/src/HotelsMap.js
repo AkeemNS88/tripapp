@@ -6,7 +6,7 @@ import {Button} from "react-bootstrap"
 
 function HotelsMap() {
   const [viewport, setViewport] = useState({
-    width: "1620px",
+    width: "1720px",
     height: "618px",
     latitude: 37.6,
     longitude: -95.665,

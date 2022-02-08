@@ -70,7 +70,7 @@ function LandmarkMap({ hotels, takePoi }) {
 
   return (
     <>
-      <p id="attpointmap">Attraction Points Map</p>
+      <p id="attpointmap">Points of interest</p>
       <ReactMapGL
         {...viewport}
         mapStyle="mapbox://styles/djhype41/ckz7614kq002414th1qdefdgp"

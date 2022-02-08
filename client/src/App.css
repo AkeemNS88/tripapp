@@ -2,7 +2,7 @@ body {
   
   background: url("/tripan.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1952px 977px;
   
 }
 
@@ -61,9 +61,10 @@ body {
 }
 
 #sidebar {
-    background-image: url("/surfer.jpg");
-    background-repeat: repeat;
-    background-size:auto;
+    background-image: url("/surfgif.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #ffff;
   }
   
   #sidebar .ant-layout-sider-children {
@@ -108,6 +109,12 @@ body {
     background-size: 100%;
   } 
   
+  .ant-layout-content{
+    background-color: #b1b1b1;
+    /* border: 2px solid #85715e;
+    border-radius: .5em;
+    box-shadow:  -0.2em 1px #000000, -0.5em 0 .5em #000000; */
+  }
 
   #login-cont{
     margin-top: 100px;
@@ -194,8 +201,8 @@ body {
   }
 
   #submitbutton{
-    color: #0096c7;
-    border-color: #0096c7;
+    color: #9800c7;
+    border-color: #9800c7;
     margin-top: 10px;
     font-size: 1rem;
     /* margin: 0.5rem 0; */
@@ -204,12 +211,12 @@ body {
   }
 
   #buttonsubmit1{
-    border: 1px solid #0096c7;
+    border: 1px solid #9800c7;
     padding: 6px;
     border-radius: 0.1cm;
     margin-top: 10px;
     font-size: 1rem;
-    color: #0096c7;
+    color: #9800c7;
     /* margin: 0.5rem 0; */
     display: block;
     width: 100%;
@@ -229,7 +236,7 @@ body {
   #planNewTrip{
     margin-bottom: 150px;
     padding: 15px;
-    background-color: #c8b3e6;
+    background-color: #b1b1b1;
   }
 
   #multiselector{

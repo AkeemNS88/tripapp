@@ -22,11 +22,11 @@ function TravelMap({ currentUser }) {
 
 
   const [viewport, setViewport] = useState({
-    width: "1620px",
-    height: "618px",
+    width: "1720px",
+    height: "700px",
     latitude: 37.6,
     longitude: -95.665,
-    zoom: 3,
+    zoom: 3.5,
   });
 
   const [points, setPoints] = useState([]);
