@@ -240,7 +240,7 @@ Run this command to start the Postgres service:
 sudo service postgresql start
 ```
 
-Finally, you'll also need to create a database user so that you are able to
+Finally, y0ou'll also need to create a database user so that you are able to
 connect to the database from Rails. First, check what your operating system
 username is:
 
