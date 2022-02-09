@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   resources :adventures, only:[:create, :index]
   resources :attractions, only:[:create, :index]
   resources :newtrips, only:[:create, :index, :destroy]
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :users, only: [:create ]
   resources :oldtrips, only: [:create, :index, :update ]
   
