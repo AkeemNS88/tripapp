@@ -147,8 +147,8 @@ function PlanNewTrip({ hotels, pointsInteres }) {
          
         <Col xs="auto">
         <Form.Group className="mb-3">
-        <Form.Label> City</Form.Label>
-        <Form.Control id="city" name="city" value={formData.city} onChange={handleChange}  menuPlacement="bottom"/>
+        <Form.Label> Name your trip!</Form.Label>
+        <Form.Control id="city" name="city" value={formData.city} onChange={handleChange}  />
         </Form.Group>
         </Col>
 
@@ -168,7 +168,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
         <Col  xs="auto">
         <Form.Group className="mb-3">
         <Form.Label> Hotel</Form.Label>
-        <Form.Select menuPlacement="auto" id="dropdown" name="hotel" value={formData.hotel} onChange={handleChange}>
+        <Form.Select  id="dropdown" name="hotel" value={formData.hotel} onChange={handleChange}>
           {listhotels}
         </Form.Select>
         </Form.Group>
