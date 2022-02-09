@@ -40,6 +40,7 @@ function SideNav({setCurrentUser, currentUser}){
                             New Trip
                         </Link>
                     </Menu.Item>
+                    
 
                     <Menu.Item key={3}>
                         <Link to="/table">
