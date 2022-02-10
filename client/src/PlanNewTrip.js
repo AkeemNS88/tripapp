@@ -191,7 +191,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
 
         <Col xs="auto">
         <Form.Group className="mb-3">
-        <button id="button3" >Tripanzee</button>
+        <button id="button3" >submit</button>
         </Form.Group>
         </Col>
         </Row>

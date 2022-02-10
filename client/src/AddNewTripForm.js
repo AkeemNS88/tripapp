@@ -72,7 +72,7 @@ function AddNewTripForm({ location, onClose }) {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label> Commentes</Form.Label>
+        <Form.Label> Comments</Form.Label>
         <Form.Control
           name="comments"
           row={3}
@@ -80,6 +80,7 @@ function AddNewTripForm({ location, onClose }) {
           onChange={handleChange}
         />
       </Form.Group>
+      <Form.Label> trip rating</Form.Label>
 
       <ReactStars
         
@@ -91,7 +92,8 @@ function AddNewTripForm({ location, onClose }) {
         halfIcon={<i className="fa fa-star-half-alt"></i>}
         fullIcon={<i className="fa fa-star"></i>}
         activeColor="#ffd700"
-        char= ""
+        color="#FFFFFF"
+        char= "🍌"
       />
 
       <Form.Group className="mb-3">

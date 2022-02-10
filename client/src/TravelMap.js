@@ -219,7 +219,9 @@ console.log(points)
                             count={5}
                             onChange={ratingChanged}
                             size={32}
-                            activeColor="#ff00d9"
+                            activeColor="#ffd700"
+                            color="#FFFFFF"
+                            char= "🍌"
                             
                           />
                         </Form.Group>
