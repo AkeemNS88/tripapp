@@ -93,7 +93,7 @@ function AddNewTripForm({ location, onClose }) {
         fullIcon={<i className="fa fa-star"></i>}
         activeColor="#ffd700"
         color="#FFFFFF"
-        char= "🍌"
+        char= '🍌'
       />
 
       <Form.Group className="mb-3">
