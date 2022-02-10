@@ -51,7 +51,7 @@ $ git remote add origin git@github.com:your-username/your-project-name.git
 $ git push -u origin main
 ```
 
-When you're ready to start building your project, run:
+When you're ready to s tart building your project, run:
 
 ```sh
 bundle install
