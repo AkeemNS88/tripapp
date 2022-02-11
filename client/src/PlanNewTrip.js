@@ -80,7 +80,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
       if (res.ok) {
         res.json().then((newtrip) => {
           handleSubmit2(newtrip.id);
-          alert("Tripanzee!!!!")
+          // alert("Tripanzee!!!!")
           setFormData({city: "", date:"", hotel:""})
           setvalue(null)
         });
@@ -191,7 +191,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
 
         <Col xs="auto">
         <Form.Group className="mb-3">
-        <button id="button3" >submit</button>
+        <button id="button3" >tripanzee</button>
         </Form.Group>
         </Col>
         </Row>

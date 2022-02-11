@@ -19,4 +19,8 @@ Rails.application.routes.draw do
   get "/oldtripnumber", to: 'users#count'
   get "/newtripnumber", to: 'users#newtripcount'
 
+  get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
+
+
+
 end

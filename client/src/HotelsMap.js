@@ -3,6 +3,9 @@ import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import PlanNewTrip from "./PlanNewTrip";
 import LandmarkMap from "./LandmarkMap";
 import {Button} from "react-bootstrap"
+import ReactStars from "react-rating-stars-component";
+
+
 
 function HotelsMap() {
   const [viewport, setViewport] = useState({
@@ -82,8 +85,8 @@ function HotelsMap() {
                       <svg
                         className="marker"
                         classviewbox="0 0 24 24"
-                        width="56p"
-                        height="56p"
+                        width="56px"
+                        height="56px"
                         stroke=" #8100eb "
                         stroke-width="2"
                         fill="#8100eb"
@@ -108,7 +111,9 @@ function HotelsMap() {
                         <h5>{hotel.name}</h5>
                         <label>Address:</label>
                         <p>{hotel.formatted_address}</p>
-                        <p>{hotel.rating} ⭐</p>
+                        {/* <label>rating:</label>
+                        <span> {hotel.rating} </span>
+                        <p> { Array().fill().map((_, i) => ( <span>🍌</span> )) }</p> */}
                       </div>
                     </Popup>
                   ) : null}

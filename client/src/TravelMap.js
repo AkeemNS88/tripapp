@@ -8,7 +8,6 @@ import ReactStars from "react-rating-stars-component";
 // import Directions from "react-map-gl-directions";
 
  
- const MAPBOX_TOKEN ="pk.eyJ1IjoiZGpoeXBlNDEiLCJhIjoiY2t6NHJzcHI4MGpsYzJvcGgwdmlmeWp2OCJ9.I3H41cBWm2dSoHrg6tQf1w"
 
 function TravelMap({ currentUser }) {
   const [edit, setEdit] = useState({ point: false });
@@ -57,6 +56,7 @@ function TravelMap({ currentUser }) {
       [point.id]: !edit.point,
     });
   }
+  
 
   const handleFormChange = (e) => {
     const name = e.target.name;
