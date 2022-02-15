@@ -2,10 +2,10 @@
 
 
 body {
+  background:#e4d9ab url("/tripan.jpg");
   
-  background: url("/tripan.jpg");
   background-repeat: no-repeat;
-  background-size: 1952px 940px;
+  background-size: 1952px 980px;
   /* width: inherit; */
   /* height: 940px; */
   cursor: url('/cart.png'), auto;

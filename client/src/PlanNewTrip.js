@@ -141,7 +141,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
 
   return (
     <>
-    <p id="planNewTrip">Plan your Trip</p>
+    <h1 id="planNewTrip">where will you go </h1>
     
       <Form id="planNewTrip" onSubmit={handleSubmit}>
       <Row className="align-items-center">
@@ -177,7 +177,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
 
         <Col  xs="auto">
         <Form.Group className="mb-3">
-        <Form.Label>Attractions</Form.Label>
+        <Form.Label>Points of Interest</Form.Label>
         <MultiSelect
           className="multiselector"
           onChange={(val) => handleOnchange(val)}

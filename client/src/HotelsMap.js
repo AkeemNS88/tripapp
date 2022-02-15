@@ -10,7 +10,7 @@ import ReactStars from "react-rating-stars-component";
 function HotelsMap() {
   const [viewport, setViewport] = useState({
     width: "1720px",
-    height: "618px",
+    height: "590px",
     latitude: 37.6,
     longitude: -95.665,
     zoom: 3,
