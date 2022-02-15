@@ -1,10 +1,18 @@
+
+
+
 body {
   
   background: url("/tripan.jpg");
   background-repeat: no-repeat;
   background-size: 1952px 940px;
-  
+  /* width: inherit; */
+  /* height: 940px; */
+  cursor: url('/cart.png'), auto;
 }
+
+
+
 
 .popup {
   width: 20vw;
@@ -59,6 +67,13 @@ body {
     display: block;
     width: 100%; 
 }
+
+/* #form1:hover {
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+} */
+
+
 
 #sidebar {
     background-image: url("/surfgif.gif");
@@ -171,11 +186,22 @@ body {
     font-size: small;
    
   }
+  .mb-3 span:hover{
+    border: 2px solid #c8b3e6;
+
+  }
+
+  .form1 span:hover{
+    border: 2px solid #c8b3e6;
+
+  }
 
   .mapboxgl-popup-content{
+    
     background-color: #d1d1d1;
     border: 2px solid #85715e;
     box-shadow:  -0.2em 1px #dddddd, -0.5em 0 .5em #dddddd;
+    
   }
 
   
@@ -185,19 +211,26 @@ body {
 
   .oldtripview h3{
     text-align: center;
-    background-color: #caf0f8;
+    background-color: #c8b3e6;
     /* margin: 0; */
     width: 100%;
   }
 
   #bustbutton{
     color: #d40bca;
-    border-color: #0096c7;
+    border-color: #c8b3e6;
     margin-top: 10px;
     font-size: 1rem;
     /* margin: 0.5rem 0; */
     display: block;
     width: 100%;
+    background: #c8b3e6;
+
+  }
+
+  #bustbutton:hover {
+    background-color: #fff;
+    text-decoration: none;
   }
 
   #submitbutton{
@@ -208,7 +241,19 @@ body {
     /* margin: 0.5rem 0; */
     display: block;
     width: 100%;
+    transition: 0.3s linear;
+    background: #c8b3e6;
+    
   }
+
+  #submitbutton:hover {
+    background-color: #fff;
+    text-decoration: none;
+  }
+
+  
+
+  
 
   #buttonsubmit1{
     border: 1px solid #9800c7;
@@ -218,8 +263,13 @@ body {
     font-size: 1rem;
     color: #9800c7;
     /* margin: 0.5rem 0; */
-    display: block;
+    /* display: block; */
     width: 100%;
+  }
+
+  #buttonsubmit1:hover{
+    background-color: #c8b3e6;
+
   }
 
 
@@ -265,6 +315,8 @@ body {
   #table{
     width: 100%;
     border-collapse:collapse;
+    
+
   }
 
   #table{
@@ -274,28 +326,37 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 70% !important; 
+    background: #9b3cf3; 
   }
 
   table tr td {
-    padding:0;  
+    padding:0;
+    
   }
   table tr td:nth-child(1) {
     width:0.5px;
+    background: #c8b3e6;
+
   } 
   table tr td:nth-child(2) {
     width:5px;
+    background: #c8b3e6;
   }
   table tr td:nth-child(3) {
     width:10px;
+    background: #c8b3e6;
   }
   table tr td:nth-child(4) {
     width:10px;
+    background: #c8b3e6;
   }
   table tr td:nth-child(5) {
     width:40px;
+    background: #c8b3e6;
   }
   table tr td:nth-child(6) {
     width:3px;
+    background: #c8b3e6;
   }
 
   
@@ -361,15 +422,39 @@ body {
     background-color: rgb(246, 246, 246);
   }
 
+  #button3:hover {
+    background-color: #c8b3e6;
+    text-decoration: none;
+  }
+
   #tagglebutton{
     margin-left: 45%;
     margin-bottom: 15px;
+    color: #9800c7;
+    background: #c8b3e6;
+  }
+  #tagglebutton:hover {
+    background-color: black;
+    text-decoration: none;
+  }
+  .button:hover{
+    background-image:none;
+    background-color: black;
+    font-size: 35px;
+    border: 10px dashed black;
+    color: black;
   }
 
   #button5{
     margin-left: 40%;
     margin-bottom: 15px;
+    
   }
+  #button5:hover {
+    background-color: #c8b3e6;
+    text-decoration: none;
+  }
+  
 
   #hotelmap{
    margin-bottom: -4px;
@@ -385,6 +470,12 @@ body {
     margin-top:20%;
     margin-left:25%;
     display:block;
+    background-color: rgb(246, 246, 246);
+    color: #d40bca;
+  }
+  #button7:hover {
+    background-color: black;
+    text-decoration: none;
   }
 
   #buttontotal{
@@ -401,17 +492,49 @@ body {
     border: 1px solid black;
     padding: 7px;
     border-radius: 0.1cm;
+    
+  }
+
+  #loginbutton:hover {
+    background-color: black;
+    text-decoration: none;
+    color: white;
   }
 
  #sigupbutton{
-  margin-top: 10px;
-  border: 1px solid black;
-  padding: 7px;
-  border-radius: 0.1cm;
-  background-color: rgb(246, 246, 246);
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 7px;
+    border-radius: 0.1cm;
+    background-color: rgb(246, 246, 246);
  }
+ #sigupbutton:hover {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
 
- #button1{
+ #b1{
   background-color: rgb(246, 246, 246);
 
  }
+ #b1:hover {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+}
+
+#b2{
+  background-color: rgb(246, 246, 246);
+
+ }
+ #b2:hover {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+}
+
+
+.oldtripview {
+
+}

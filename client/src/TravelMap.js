@@ -215,6 +215,7 @@ console.log(points)
                           />
                         </Form.Group>
                         <Form.Group className="mb-3">
+                        <Form.Label> Rating:</Form.Label>
                           <ReactStars
                             count={5}
                             onChange={ratingChanged}

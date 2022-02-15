@@ -17,7 +17,7 @@ function LoginSigupPage ({setCurrentUser}){
             <>
               <LoginForm setCurrentUser={setCurrentUser} />
               <p id="p1">
-                Not a tripanzee sign up its free! &nbsp;
+                New to tripanzee? sign up its free! &nbsp;
                 <Button  id="b1" variant="outline-dark" onClick={() => setShowLogin(false)}>Sign Up</Button>
               </p>
             </>
