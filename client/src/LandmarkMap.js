@@ -6,7 +6,7 @@ import PlanNewTrip from "./PlanNewTrip"
 function LandmarkMap({ hotels, takePoi }) {
   //   const [logEntries, setLogEntries] = useState([]);
   const [viewport, setViewport] = useState({
-    width: "1700px",
+    width: "1710px",
     height: "638px",
     latitude: 37.6,
     longitude: -95.665,
@@ -19,7 +19,6 @@ function LandmarkMap({ hotels, takePoi }) {
   });
 
   const [pointsInteres, setPointsInters] = useState([]);
-  // console.log(pointsInteres)
 
   const [showPopup, setshowPopup] = React.useState({});
 
@@ -28,7 +27,6 @@ function LandmarkMap({ hotels, takePoi }) {
     adress: "",
   });
 
-  // const [printAtractions, setPrintAtractions] = useState([]);
 
   const takeCordinate = (event) => {
     const [longitude, latitude] = event.lngLat;
@@ -90,7 +88,7 @@ function LandmarkMap({ hotels, takePoi }) {
                     stroke-width="2"
                     fill="none"
                     stroke-linecap="round"
-                    // stroke-linejoin="round"
+                    
                   >
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
@@ -111,11 +109,7 @@ function LandmarkMap({ hotels, takePoi }) {
                     <h5>{poi.name}</h5>
                     <label>Address:</label>
                     <p>{poi.formatted_address}</p>
-                    {/* (poi.photos)&&poi.photos.forEach((i)=>console.log(i.photo_reference))} */}
-                    {/* {poi.photos &&
-                      poi.photos.map((i) => (
-                        <img src={i.photo_reference} alt={poi.name} />
-                      ))} */}
+                   
                   </div>
                 </Popup>
               ) : null}
@@ -123,9 +117,7 @@ function LandmarkMap({ hotels, takePoi }) {
           );
         })}
       </ReactMapGL>
-      {/* <PlanNewTrip hotels={hotels} pointsInteres={pointsInteres} /> */}
-
-      {/* <ShowPlanedTrips/> */}
+     
     </>
   );
 }

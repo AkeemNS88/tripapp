@@ -2,10 +2,10 @@
 
 
 body {
-  background:#e4d9ab url("/tripan.jpg");
-  
+  background-image:url("/tripan.jpg") ;
+  background-color: #e4d9ab;
   background-repeat: no-repeat;
-  background-size: 1952px 980px;
+  background-size: 1952px 1008px;
   /* width: inherit; */
   /* height: 940px; */
   cursor: url('/cart.png'), auto;
@@ -80,6 +80,8 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #ffff;
+    border: 2px solid #94bd3d;
+    
   }
   
   #sidebar .ant-layout-sider-children {
@@ -122,13 +124,17 @@ body {
     background-image: url("/tittle.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    
   } 
   
   .ant-layout-content{
     background-color: #e4d9ab;
-    /* border: 2px solid #85715e;
-    border-radius: .5em;
-    box-shadow:  -0.2em 1px #000000, -0.5em 0 .5em #000000; */
+    border: 4px double #503624;
+    box-shadow:  -0.2em 1px #d1d1d1, -0.5em 0 .5em #d1d1d1;
+    /* border-bottom-color: #94bd3d;
+    border-left-color: #ffff;
+    border-top-color: #fbb428; */
+    /* border-left-style: solid  ; */
   }
   
   #planNewTrip{

@@ -25,7 +25,7 @@ function TravelMap({ currentUser }) {
 
 
   const [viewport, setViewport] = useState({
-    width: "1720px",
+    width: "1710px",
     height: "810px",
     latitude: 37.6,
     longitude: -95.665,
