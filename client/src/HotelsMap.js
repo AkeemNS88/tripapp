@@ -9,8 +9,8 @@ import ReactStars from "react-rating-stars-component";
 
 function HotelsMap() {
   const [viewport, setViewport] = useState({
-    width: "1720px",
-    height: "590px",
+    width: "1700px",
+    height: "638px",
     latitude: 37.6,
     longitude: -95.665,
     zoom: 3,
@@ -55,8 +55,7 @@ function HotelsMap() {
       {showMap ? (
         <>
           <Button variant="outline-dark" id="tagglebutton" onClick={() => setShowMap(false)}>
-            {" "}
-            Points of interest{" "}
+            {" "}Points of interest{" "}
           </Button>
           <p id="hotelmap">{" "} Hotels {" "}</p>
           <ReactMapGL
@@ -125,8 +124,7 @@ function HotelsMap() {
       ) : (
         <>
           <Button id="button5" variant="dark" onClick={() => setShowMap(true)}>
-            {" "}
-            Show Hotels{" "}
+            {" "}Show Hotels{" "}
           </Button>
           <LandmarkMap hotels={hotels} takePoi={takePoi} />
         </>

@@ -5,7 +5,6 @@ import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import AddNewTripForm from "./AddNewTripForm";
 import { Button, Form, Label, Control } from "react-bootstrap";
 import ReactStars from "react-rating-stars-component";
-// import Directions from "react-map-gl-directions";
 
  
 

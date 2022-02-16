@@ -125,11 +125,19 @@ body {
   } 
   
   .ant-layout-content{
-    background-color: #b1b1b1;
+    background-color: #e4d9ab;
     /* border: 2px solid #85715e;
     border-radius: .5em;
     box-shadow:  -0.2em 1px #000000, -0.5em 0 .5em #000000; */
   }
+  
+  #planNewTrip{
+    text-align: left;
+    margin: 10px;
+    background: #e4d9ab;
+    border: 1px
+  }
+
 
   #login-cont{
     margin-top: 100px;
@@ -283,11 +291,11 @@ body {
     font-size: small; 
   }
 
-  #planNewTrip{
-    margin-bottom: 150px;
+  /* #planNewTrip{
+    margin-bottom: 15px;
     padding: 15px;
     background-color: #b1b1b1;
-  }
+  } */
 
   #multiselector{
     position:absolute;
@@ -361,10 +369,6 @@ body {
 
   
 
-  #planNewTrip{
-    text-align: center;
-    margin: 15px;
-  }
 
   #city{
     overflow: hidden;
@@ -535,6 +539,3 @@ body {
 }
 
 
-.oldtripview {
-
-}

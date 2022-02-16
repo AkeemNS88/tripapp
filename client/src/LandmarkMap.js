@@ -6,8 +6,8 @@ import PlanNewTrip from "./PlanNewTrip"
 function LandmarkMap({ hotels, takePoi }) {
   //   const [logEntries, setLogEntries] = useState([]);
   const [viewport, setViewport] = useState({
-    width: "1620px",
-    height: "618px",
+    width: "1700px",
+    height: "638px",
     latitude: 37.6,
     longitude: -95.665,
     zoom: 3,
@@ -51,21 +51,7 @@ function LandmarkMap({ hotels, takePoi }) {
       adress: poi.formatted_address,
     });
 
-    // fetch("/attractions", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(attractions),
-    // }).then((res) => {
-    //   if (res.ok) {
-    //     res.json().then((attractions) => {
-    //       setPrintAtractions(attractions);
-    //     });
-    //   } else {
-    //     res.json().then((error) => {});
-    //   }
-    // });
+ 
   };
 
   return (
@@ -98,8 +84,8 @@ function LandmarkMap({ hotels, takePoi }) {
                   <svg
                     className="marker"
                     classviewbox="0 0 24 24"
-                    width="56"
-                    height="56"
+                    width="56px"
+                    height="56px"
                     stroke="#ff00a2"
                     stroke-width="2"
                     fill="none"
@@ -137,7 +123,7 @@ function LandmarkMap({ hotels, takePoi }) {
           );
         })}
       </ReactMapGL>
-      <PlanNewTrip hotels={hotels} pointsInteres={pointsInteres} />
+      {/* <PlanNewTrip hotels={hotels} pointsInteres={pointsInteres} /> */}
 
       {/* <ShowPlanedTrips/> */}
     </>

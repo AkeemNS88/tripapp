@@ -141,7 +141,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
 
   return (
     <>
-    <h1 id="planNewTrip">where will you go </h1>
+    <p id="planNewTrip"> </p>
     
       <Form id="planNewTrip" onSubmit={handleSubmit}>
       <Row className="align-items-center">
@@ -182,10 +182,10 @@ function PlanNewTrip({ hotels, pointsInteres }) {
           className="multiselector"
           onChange={(val) => handleOnchange(val)}
           options={listpoi}
-          // menuPosition='bottom'
+          menuPosition='bottom'
           downArrow={true}
           defaultValue="Attraction Point"
-          menuplacement="bottom"
+          // menuplacement="bottom"
         />
         </Form.Group>
         </Col>
@@ -197,8 +197,7 @@ function PlanNewTrip({ hotels, pointsInteres }) {
         </Col>
         </Row>
       </Form>
-      {/* <tag >doubel click on the map where you wan to go!</tag> */}
-      {/* <h3>Ctrl + drag will enable 3d mode</h3> */}
+      
     </>
   );
 }
