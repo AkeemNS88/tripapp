@@ -186,14 +186,17 @@ body {
 
   .oldtripview{
     padding: 5px;
+    
    
   }
 
   .oldtripview label{
     font-weight: bold;
-    font-size: small;
+    font-size: small; 
+    text-decoration: underline;
    
   }
+  
   .mb-3 span:hover{
     border: 2px solid #c8b3e6;
 
@@ -206,8 +209,8 @@ body {
 
   .mapboxgl-popup-content{
     
-    background-color: #d1d1d1;
-    border: 2px solid #85715e;
+    background-color: #ffff;
+    border: 2px solid #ffff;
     box-shadow:  -0.2em 1px #dddddd, -0.5em 0 .5em #dddddd;
     
   }
