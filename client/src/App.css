@@ -210,9 +210,11 @@ body {
   .mapboxgl-popup-content{
     
     background-color: #ffff;
-    border: 2px solid #85715e;
-    box-shadow:  -0.2em 1px #dddddd, -0.5em 0 .5em #dddddd;
-    
+    border: 5px double #be38cf;
+    box-shadow:  -0.2em 1px #d1d1d1, -0.5em 0 .5em #d1d1d1;
+    border-bottom-color: #94bd3d;
+    border-left-color: #29dcfc;
+    border-top-color: #fbb428;
   }
 
   
