@@ -210,7 +210,7 @@ body {
   .mapboxgl-popup-content{
     
     background-color: #ffff;
-    border: 2px solid #ffff;
+    border: 2px solid #85715e;
     box-shadow:  -0.2em 1px #dddddd, -0.5em 0 .5em #dddddd;
     
   }
