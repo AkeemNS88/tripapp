@@ -57,8 +57,8 @@ function LandmarkMap({ hotels, takePoi }) {
       <p id="attpointmap">Points of interest</p>
       <ReactMapGL
         {...viewport}
-        mapStyle="mapbox://styles/djhype41/ckz7614kq002414th1qdefdgp"
-        mapboxApiAccessToken="pk.eyJ1IjoiZGpoeXBlNDEiLCJhIjoiY2t6NHJzcHI4MGpsYzJvcGgwdmlmeWp2OCJ9.I3H41cBWm2dSoHrg6tQf1w"
+        mapStyle="mapbox://styles/decorum1188/cle6mbmxx009i01rrbf0lz8kj"
+        mapboxApiAccessToken="pk.eyJ1IjoiZGVjb3J1bTExODgiLCJhIjoiY2xlNmx2enY5MGllaTNwcGJiN3ppbnpkeiJ9.rOLyknJTX9vucq_RKG6SWw"
         onViewportChange={setViewport}
         onDblClick={takeCordinate}
         
