@@ -39,4 +39,4 @@ This command starts a postgres container with
 - postgres password set to `my_secret_password`
 - a volume to store database files `local_mount_dir` for persistence
 
-..
+...
