@@ -1,0 +1,18 @@
+# This is a multi-stage build, so we need to specify the FROM directive twice.
+# The first stage is called builder and the second stage is called production.
+# We first use the node alpine image to build the app and then use nginx to serve it.
+
+FROM node:16-alpine as builder
+
+WORKDIR /app
+COPY client .
+RUN npm ci 
+RUN npm run build
+
+FROM nginx:1.21.0-alpine as production
+
+ENV NODE_ENV production
+COPY --from=builder /app/build /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
