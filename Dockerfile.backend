@@ -1,0 +1,15 @@
+FROM ruby:2.7.4-alpine
+
+RUN apk add \
+    build-base \
+    postgresql-dev \
+    tzdata \
+    nodejs
+
+WORKDIR /app
+COPY backend/Gemfile .
+COPY backend/Gemfile.lock .
+RUN bundle install
+COPY backend .
+EXPOSE 3000
+CMD ["rails", "server", "-b", "0.0.0.0"]
